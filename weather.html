@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <p class="heading">Welcome To The Weather App</p>
+        <p class="text">Here is your current location</p>
+        <div class="buttons">
+          <span id="lat">Lat: </span>
+          <span id="long">Long: </span>
+        </div>
+        <div class="map">
+          <iframe
+            id="mapp"
+            src="https://maps.google.com/maps/?q=,&output=embed"
+            width="1605"
+            height="783"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <div class="container2">
+        <p class="heading" id="heading">Your Weather Data</p>
+        <div class="details">
+          <div>
+            <span id="loc">Location : </span>
+            <span id="windspeed"> Wind Speed : </span>
+            <span id="humidity">Humidity : </span>
+          </div>
+          <div>
+            <span id="tz">Time Zone : </span>
+            <span id="press">Pressure: </span>
+            <span id="wd">Wind Direction: </span>
+          </div>
+          <div>
+            <span id="uv">UV Index : </span>
+            <span id="temp">Feels like: </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
